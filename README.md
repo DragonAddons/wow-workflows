@@ -26,7 +26,7 @@ on:
 
 jobs:
   release-pr:
-    uses: Xerrion/wow-workflows/.github/workflows/release-pr.yml@main
+    uses: DragonAddons/wow-workflows/.github/workflows/release-pr.yml@main
     secrets: inherit
 ```
 
@@ -65,7 +65,7 @@ on:
 
 jobs:
   release:
-    uses: Xerrion/wow-workflows/.github/workflows/release.yml@main
+    uses: DragonAddons/wow-workflows/.github/workflows/release.yml@main
     with:
       tag_name: ${{ inputs.tag_name || '' }}
     secrets: inherit
@@ -84,7 +84,7 @@ The release workflow fetches this script automatically - caller repos do NOT nee
 
 ## Adopting Repos
 
+- [DragonLoot](https://github.com/DragonAddons/DragonLoot)
+- [DragonToast](https://github.com/DragonAddons/DragonToast)
+- [LibAnimate](https://github.com/DragonAddons/LibAnimate)
 - [PhDamage](https://github.com/Xerrion/PhDamage)
-- [DragonToast](https://github.com/Xerrion/DragonToast)
-- [DragonLoot](https://github.com/Xerrion/DragonLoot)
-- [LibAnimate](https://github.com/Xerrion/LibAnimate)
