@@ -25,7 +25,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
         with:
           ref: ${{ inputs.base-branch }}
 
@@ -68,8 +68,6 @@ jobs:
       - name: Create or update PR
         if: steps.diff.outputs.has_changes == 'true'
         shell: bash
-        env:
-          GH_TOKEN: ${{ github.token }}
         run: |
           BRANCH="chore/toc-interface-version"
           TITLE="chore: update TOC Interface versions"
